@@ -1,5 +1,7 @@
-#include "pch.h"
+
 #include "CppUnitTest.h"
+#include "Execute.h"
+#include "ExecuteHw.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -11,6 +13,30 @@ namespace UnitTestForArduino
 		
 		TEST_METHOD(TestMethod1)
 		{
+			Execute sk;
+
+			int sk5 = sk.Skaiciavimas5();
+
+			int sk8 = sk.Skaiciavimas8();
+
+			Assert::AreEqual(sk5, 5);
+
+			Assert::AreEqual(sk8, 8);
+
+			int aaa = funkcija(sk);
+
+			Assert::AreEqual(aaa, 5);
+
+			ExecuteHw hww;
+
+			int bbb = funkcija(hww);
+
+			Assert::AreEqual(bbb, 50);
+		}
+
+		int funkcija(Interfaceee& iii)
+		{
+			return iii.Skaiciavimas5();		
 		}
 	};
 }
