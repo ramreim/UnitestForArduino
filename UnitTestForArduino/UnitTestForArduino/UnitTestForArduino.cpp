@@ -2,6 +2,7 @@
 #include "CppUnitTest.h"
 #include "ExecuteSw.h"
 #include "ExecuteHw.h"
+#include "Result.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -14,6 +15,14 @@ namespace UnitTestForArduino
 		TEST_METHOD(TestMethod1)
 		{
 			ExecuteSw sk;
+
+			Result a = sk.DigitalReadCmd(5);
+
+			Assert::AreEqual(a.functionNr, 1);
+			
+			Assert::AreEqual(a.pinNumber, 5);
+			
+			Assert::AreEqual(a.functionResult, 6);
 
 			//int sk5 = sk.Skaiciavimas5();
 
