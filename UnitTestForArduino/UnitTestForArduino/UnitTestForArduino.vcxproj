@@ -156,7 +156,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Execute.cpp">
+    <ClCompile Include="ExecuteSw.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="ExecuteHw.cpp">
@@ -170,7 +170,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Execute.h" />
+    <ClInclude Include="ExecuteSw.h" />
     <ClInclude Include="ExecuteHw.h" />
     <ClInclude Include="Interfaceee.h" />
   </ItemGroup>

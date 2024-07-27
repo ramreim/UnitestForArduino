@@ -1,6 +1,6 @@
 
 #include "CppUnitTest.h"
-#include "Execute.h"
+#include "ExecuteSw.h"
 #include "ExecuteHw.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -13,7 +13,7 @@ namespace UnitTestForArduino
 		
 		TEST_METHOD(TestMethod1)
 		{
-			Execute sk;
+			ExecuteSw sk;
 
 			int sk5 = sk.Skaiciavimas5();
 

@@ -18,7 +18,7 @@
     <ClCompile Include="UnitTestForArduino.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Execute.cpp">
+    <ClCompile Include="ExecuteSw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Interfaceee.cpp">
@@ -29,7 +29,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Execute.h">
+    <ClInclude Include="ExecuteSw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Interfaceee.h">
