@@ -27,9 +27,9 @@ namespace UnitTestForArduino
 
 			Assert::AreEqual(aaa, 5);
 
-			ExecuteHw hwwww;
+			ExecuteHw hwww;
 
-			int bbb = funkcija(hwwww);
+			int bbb = funkcija(hwww);
 
 			Assert::AreEqual(bbb, 50);
 		}
