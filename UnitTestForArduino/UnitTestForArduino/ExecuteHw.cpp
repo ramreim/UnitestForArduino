@@ -1,11 +1,37 @@
 #include "ExecuteHw.h"
 
-int ExecuteHw::Skaiciavimas5()
+#include "Result.h"
+
+Result ExecuteHw::DigitalReadCmd(int pin)
 {
-	return 50;
+	result.pinNumber = pin;
+	result.functionNr = 1;
+	//result.functionResult = digitalRead(pin);
+	return result;
 }
 
-int ExecuteHw::Skaiciavimas8()
+Result ExecuteHw::DigitalWriteCmd(int pin, int val)
 {
-	return 80;
+	result.pinNumber = pin;
+	result.functionNr = 1;
+	//digitalWrite(pin, val);
+	result.functionResult = val;
+	return result;
+}
+
+Result ExecuteHw::AnalogReadCmd(int pin)
+{
+	result.pinNumber = pin;
+	result.functionNr = 1;
+	//result.functionResult = analogRead(pin);
+	return result;
+}
+
+Result ExecuteHw::AnalogWriteCmd(int pin, int val)
+{
+	result.pinNumber = pin;
+	result.functionNr = 4;
+	//analogWrite(pin, val);
+	result.functionResult = val;
+	return result;
 }
