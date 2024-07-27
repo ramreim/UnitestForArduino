@@ -26,9 +26,11 @@ namespace UnitTestForArduino
 			
 			Assert::AreEqual(a.functionResult, 6);
 
-			//funkcija(sk);
+			Result r1 = funkcija(sk);
 
-			//funkcija(ww);
+			Result r2 = funkcija(ww);
+
+			int aa = 25;
 
 			//int sk5 = sk.Skaiciavimas5();
 
@@ -49,13 +51,11 @@ namespace UnitTestForArduino
 			//Assert::AreEqual(bbb, 50);
 		}
 
-		int funkcija(Interfaceee& iii)
+		Result funkcija(Interfaceee& iii)
 		{
 			//return iii.Skaiciavimas5();
 
-			iii.AnalogReadCmd(10);
-
-			return 0;
+			return iii.AnalogReadCmd(10);			
 		}
 	};
 }
