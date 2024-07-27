@@ -13,7 +13,7 @@ Result ExecuteHw::DigitalReadCmd(int pin)
 Result ExecuteHw::DigitalWriteCmd(int pin, int val)
 {
 	result.pinNumber = pin;
-	result.functionNr = 1;
+	result.functionNr = 2;
 	//digitalWrite(pin, val);
 	result.functionResult = val;
 	return result;
@@ -22,7 +22,7 @@ Result ExecuteHw::DigitalWriteCmd(int pin, int val)
 Result ExecuteHw::AnalogReadCmd(int pin)
 {
 	result.pinNumber = pin;
-	result.functionNr = 1;
+	result.functionNr = 3;
 	//result.functionResult = analogRead(pin);
 	return result;
 }

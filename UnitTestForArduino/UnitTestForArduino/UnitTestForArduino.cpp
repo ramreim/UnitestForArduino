@@ -16,6 +16,8 @@ namespace UnitTestForArduino
 		{
 			ExecuteSw sk;
 
+			ExecuteHw ww;
+
 			Result a = sk.DigitalReadCmd(5);
 
 			Assert::AreEqual(a.functionNr, 1);
@@ -23,6 +25,10 @@ namespace UnitTestForArduino
 			Assert::AreEqual(a.pinNumber, 5);
 			
 			Assert::AreEqual(a.functionResult, 6);
+
+			//funkcija(sk);
+
+			//funkcija(ww);
 
 			//int sk5 = sk.Skaiciavimas5();
 
@@ -45,7 +51,9 @@ namespace UnitTestForArduino
 
 		int funkcija(Interfaceee& iii)
 		{
-			//return iii.Skaiciavimas5();	
+			//return iii.Skaiciavimas5();
+
+			iii.AnalogReadCmd(10);
 
 			return 0;
 		}
