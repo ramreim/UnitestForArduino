@@ -27,10 +27,6 @@ namespace UnitTestForArduino
 			
 			Assert::AreEqual(a.functionResult, 6);
 
-			Result r1 = funkcija(sk);
-
-			Result r2 = funkcija(ww);
-
 			ExecuterGeneral ee;
 
 			auto at0 = ee.Funkcija(sk);
@@ -60,13 +56,6 @@ namespace UnitTestForArduino
 			//int bbb = funkcija(hwww);
 
 			//Assert::AreEqual(bbb, 50);
-		}
-
-		Result funkcija(Interfaceee& iii)
-		{
-			//return iii.Skaiciavimas5();
-
-			return iii.AnalogReadCmd(10);			
 		}
 	};
 }
