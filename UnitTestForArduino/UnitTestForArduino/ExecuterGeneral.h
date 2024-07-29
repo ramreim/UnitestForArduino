@@ -14,7 +14,7 @@ public:
     {
     }
 
-    Result Funkcija(Interfaceee&);
+    Result AnalogReadCmdd(Interfaceee&, int);
 };
 
 #endif

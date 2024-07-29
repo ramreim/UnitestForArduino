@@ -7,11 +7,11 @@
 
 
 
-Result ExecuterGeneral::Funkcija(Interfaceee& iii)
+Result ExecuterGeneral::AnalogReadCmdd(Interfaceee& IExecuterGeneral, int pin)
 {
 	//return iii.Skaiciavimas5();
 
-	return iii.AnalogReadCmd(10);
+	return IExecuterGeneral.AnalogReadCmd(pin);
 }
 
 

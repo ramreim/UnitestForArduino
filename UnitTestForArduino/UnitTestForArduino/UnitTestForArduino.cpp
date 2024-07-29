@@ -29,9 +29,9 @@ namespace UnitTestForArduino
 
 			ExecuterGeneral ee;
 
-			auto at0 = ee.Funkcija(sk);
+			auto analog02 = ee.AnalogReadCmdd(sk, 2);
 
-			auto at1 = ee.Funkcija(ww);
+			auto analog04 = ee.AnalogReadCmdd(ww, 4);
 
 
 
