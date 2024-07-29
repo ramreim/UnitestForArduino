@@ -2,6 +2,7 @@
 #include "CppUnitTest.h"
 #include "ExecuteSw.h"
 #include "ExecuteHw.h"
+#include "ExecuterGeneral.h"
 #include "Result.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -30,7 +31,17 @@ namespace UnitTestForArduino
 
 			Result r2 = funkcija(ww);
 
+			ExecuterGeneral ee;
+
+			auto at0 = ee.Funkcija(sk);
+
+			auto at1 = ee.Funkcija(ww);
+
+
+
 			int aa = 25;
+
+
 
 			//int sk5 = sk.Skaiciavimas5();
 
