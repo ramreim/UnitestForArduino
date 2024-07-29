@@ -14,7 +14,15 @@ public:
     {
     }
 
+    Result DigitalReadCmdd(Interfaceee&, int);
+
     Result AnalogReadCmdd(Interfaceee&, int);
+
+    Result DigitalWriteCmdd(Interfaceee&, int, int);
+
+    Result AnalogWriteCmdd(Interfaceee&, int, int);
+
+
 };
 
 #endif
