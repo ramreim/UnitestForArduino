@@ -1,9 +1,9 @@
 #ifndef EXECUTE_SW
 #define EXECUTE_SW
 #include "Result.h"
-#include "Interfaceee.h"
+#include "IExecute.h"
 
-class ExecuteSw : public Interfaceee
+class ExecuteSw : public IExecute
 {
 private:
     Result result;

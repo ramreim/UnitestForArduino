@@ -1,7 +1,7 @@
-#ifndef INTERFACE_H
-#define INTERFACE_H
+#ifndef IEXECUTE_H
+#define IEXECUTE_H
 
-class Interfaceee
+class IExecute
 {
 public:
 
@@ -15,4 +15,4 @@ public:
 };
 
 #endif
-// endif INTERFACE_H
+// endif IEXECUTE_H

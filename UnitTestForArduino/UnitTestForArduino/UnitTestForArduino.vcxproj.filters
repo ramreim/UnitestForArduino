@@ -35,7 +35,7 @@
     <ClInclude Include="ExecuteSw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Interfaceee.h">
+    <ClInclude Include="IExecute.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ExecuteHw.h">

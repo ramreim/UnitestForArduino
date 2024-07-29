@@ -2,26 +2,26 @@
 
 #include "Result.h"
 
-#include "Interfaceee.h"
+#include "IExecute.h"
 
-Result ExecuterGeneral::DigitalReadCmdd(Interfaceee& IExecuterGeneral, int pin)
+Result ExecuterGeneral::DigitalReadCmdd(IExecute& ExecuteGeneral, int pin)
 {
-	return IExecuterGeneral.DigitalReadCmd(pin);
+	return ExecuteGeneral.DigitalReadCmd(pin);
 }
 
-Result ExecuterGeneral::AnalogReadCmdd(Interfaceee& IExecuterGeneral, int pin)
+Result ExecuterGeneral::AnalogReadCmdd(IExecute& ExecuteGeneral, int pin)
 {
-	return IExecuterGeneral.AnalogReadCmd(pin);
+	return ExecuteGeneral.AnalogReadCmd(pin);
 }
 
-Result ExecuterGeneral::DigitalWriteCmdd(Interfaceee& IExecuterGeneral, int pin, int val)
+Result ExecuterGeneral::DigitalWriteCmdd(IExecute& ExecuteGeneral, int pin, int val)
 {
-	return IExecuterGeneral.DigitalWriteCmd(pin, val);
+	return ExecuteGeneral.DigitalWriteCmd(pin, val);
 }
 
-Result ExecuterGeneral::AnalogWriteCmdd(Interfaceee& IExecuterGeneral, int pin, int val)
+Result ExecuterGeneral::AnalogWriteCmdd(IExecute& ExecuteGeneral, int pin, int val)
 {
-	return IExecuterGeneral.AnalogWriteCmd(pin, val);
+	return ExecuteGeneral.AnalogWriteCmd(pin, val);
 }
 
 
