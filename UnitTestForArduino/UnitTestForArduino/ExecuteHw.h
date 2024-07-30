@@ -1,5 +1,5 @@
-#ifndef EXECUTE_HW
-#define EXECUTE_HW
+#ifndef EXECUTE_HW_H
+#define EXECUTE_HW_H
 #include "Result.h"
 #include "IExecute.h"
 
