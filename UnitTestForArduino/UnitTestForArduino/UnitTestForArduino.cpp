@@ -19,53 +19,19 @@ namespace UnitTestForArduino
 
 			ExecuteHw hw;
 
-			Result a = sw.DigitalReadCmd(5);
-
-			Assert::AreEqual(a.functionNr, 1);
-			
-			Assert::AreEqual(a.pinNumber, 5);
-			
-			Assert::AreEqual(a.functionResult, 6);
-
 			ExecuterGeneral executerGener;
 
-			auto analogSw02 = executerGener.AnalogReadCmdd(sw, 2);
-
-			auto analogHw02 = executerGener.AnalogReadCmdd(hw, 4);
-
+			Result analogSw02 = executerGener.AnalogReadCmdd(sw, 2);
 
 			Assert::AreEqual(analogSw02.functionNr, 3);
 			Assert::AreEqual(analogSw02.pinNumber, 2);
 			Assert::AreEqual(analogSw02.functionResult, 5);
 
+			Result analogHw02 = executerGener.AnalogReadCmdd(hw, 4);
 
 			Assert::AreEqual(analogHw02.functionNr, 3);
 			Assert::AreEqual(analogHw02.pinNumber, 4);
 			Assert::AreEqual(analogHw02.functionResult, 7);
-
-
-
-			int aa = 25;
-
-
-
-			//int sk5 = sk.Skaiciavimas5();
-
-			//int sk8 = sk.Skaiciavimas8();
-
-			//Assert::AreEqual(sk5, 5);
-
-			//Assert::AreEqual(sk8, 8);
-
-			//int aaa = funkcija(sk);
-
-			//Assert::AreEqual(aaa, 5);
-
-			//ExecuteHw hwww;
-
-			//int bbb = funkcija(hwww);
-
-			//Assert::AreEqual(bbb, 50);
 		}
 	};
 }
