@@ -15,11 +15,11 @@ namespace UnitTestForArduino
 		
 		TEST_METHOD(TestMethod1)
 		{
-			ExecuteSw sk;
+			ExecuteSw sw;
 
-			ExecuteHw ww;
+			ExecuteHw hw;
 
-			Result a = sk.DigitalReadCmd(5);
+			Result a = sw.DigitalReadCmd(5);
 
 			Assert::AreEqual(a.functionNr, 1);
 			
@@ -27,11 +27,21 @@ namespace UnitTestForArduino
 			
 			Assert::AreEqual(a.functionResult, 6);
 
-			ExecuterGeneral ee;
+			ExecuterGeneral executerGener;
 
-			auto analog02 = ee.AnalogReadCmdd(sk, 2);
+			auto analogSw02 = executerGener.AnalogReadCmdd(sw, 2);
 
-			auto analog04 = ee.AnalogReadCmdd(ww, 4);
+			auto analogHw02 = executerGener.AnalogReadCmdd(hw, 4);
+
+
+			Assert::AreEqual(analogSw02.functionNr, 3);
+			Assert::AreEqual(analogSw02.pinNumber, 2);
+			Assert::AreEqual(analogSw02.functionResult, 5);
+
+
+			Assert::AreEqual(analogHw02.functionNr, 3);
+			Assert::AreEqual(analogHw02.pinNumber, 4);
+			Assert::AreEqual(analogHw02.functionResult, 7);
 
 
 
