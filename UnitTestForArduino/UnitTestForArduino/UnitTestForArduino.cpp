@@ -13,7 +13,7 @@ namespace UnitTestForArduino
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(AnalogRead_sw_02_hw_04)
 		{
 			ExecuteSw sw;
 
@@ -32,6 +32,11 @@ namespace UnitTestForArduino
 			Assert::AreEqual(analogHw02.functionNr, 3);
 			Assert::AreEqual(analogHw02.pinNumber, 4);
 			Assert::AreEqual(analogHw02.functionResult, 7);
+		}
+
+		TEST_METHOD(DigitalRead_sw_03_hw_05)
+		{
+
 		}
 	};
 }
