@@ -95,6 +95,30 @@ namespace UnitTestForArduino
 			ExecuteHw hw;
 
 			ExecuterGeneral executerGener;
+
+			Result analogSw3Write30 = executerGener.AnalogWriteCmdd(sw, 3, 30);
+
+			Assert::AreEqual(analogSw3Write30.functionNr, 4);
+			Assert::AreEqual(analogSw3Write30.pinNumber, 3);
+			Assert::AreEqual(analogSw3Write30.functionResult, 30);
+
+			Result analogSw3Write40 = executerGener.AnalogWriteCmdd(sw, 3, 40);
+
+			Assert::AreEqual(analogSw3Write40.functionNr, 4);
+			Assert::AreEqual(analogSw3Write40.pinNumber, 3);
+			Assert::AreEqual(analogSw3Write40.functionResult, 40);
+
+			Result analogSw5Write150 = executerGener.AnalogWriteCmdd(hw, 5, 150);
+
+			Assert::AreEqual(analogSw5Write150.functionNr, 4);
+			Assert::AreEqual(analogSw5Write150.pinNumber, 5);
+			Assert::AreEqual(analogSw5Write150.functionResult, 159);
+
+			Result analogSw5Write180 = executerGener.AnalogWriteCmdd(hw, 5, 180);
+
+			Assert::AreEqual(analogSw5Write180.functionNr, 4);
+			Assert::AreEqual(analogSw5Write180.pinNumber, 5);
+			Assert::AreEqual(analogSw5Write180.functionResult, 189);
 		}
 	};
 }
