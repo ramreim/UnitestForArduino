@@ -36,7 +36,23 @@ namespace UnitTestForArduino
 
 		TEST_METHOD(DigitalRead_sw_03_hw_05)
 		{
+			ExecuteSw sw;
 
+			ExecuteHw hw;
+
+			ExecuterGeneral executerGener;
+
+			Result digitalSw03Read = executerGener.DigitalReadCmdd(sw, 3);
+
+			Assert::AreEqual(digitalSw03Read.functionNr, 1);
+			Assert::AreEqual(digitalSw03Read.pinNumber, 3);
+			Assert::AreEqual(digitalSw03Read.functionResult, 4);
+
+			Result digitalSw05Read = executerGener.DigitalReadCmdd(hw, 5);
+
+			Assert::AreEqual(digitalSw05Read.functionNr, 1);
+			Assert::AreEqual(digitalSw05Read.pinNumber, 5);
+			Assert::AreEqual(digitalSw05Read.functionResult, 6);
 		}
 	};
 }
