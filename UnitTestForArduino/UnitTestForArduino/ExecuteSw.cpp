@@ -17,7 +17,7 @@ Result ExecuteSw::DigitalWriteCmd(int pin, int val)
 	result.functionNr = 2;
 	result.functionResult = pin + result.functionNr + val;
 	//digitalWrite(pin, val);
-	result.functionResult = val;
+	//result.functionResult = val;
 	return result;
 }
 
@@ -36,6 +36,6 @@ Result ExecuteSw::AnalogWriteCmd(int pin, int val)
 	result.functionNr = 4;
 	result.functionResult = pin + result.functionNr + val;
 	//analogWrite(pin, val);
-	result.functionResult = val;
+	//result.functionResult = val;
 	return result;
 }

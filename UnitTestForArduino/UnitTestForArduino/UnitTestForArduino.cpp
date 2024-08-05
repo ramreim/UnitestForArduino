@@ -46,13 +46,13 @@ namespace UnitTestForArduino
 
 			Assert::AreEqual(digitalSw10WriteHIGH.functionNr, 2);
 			Assert::AreEqual(digitalSw10WriteHIGH.pinNumber, 10);
-			Assert::AreEqual(digitalSw10WriteHIGH.functionResult, 1);
+			Assert::AreEqual(digitalSw10WriteHIGH.functionResult, 13);
 
 			Result digitalSw10WriteLOW = executerGener.DigitalWriteCmdd(sw, 10, 0);
 
 			Assert::AreEqual(digitalSw10WriteLOW.functionNr, 2);
 			Assert::AreEqual(digitalSw10WriteLOW.pinNumber, 10);
-			Assert::AreEqual(digitalSw10WriteLOW.functionResult, 0);
+			Assert::AreEqual(digitalSw10WriteLOW.functionResult, 12);
 
 			Result digitalHw11WriteHIGH = executerGener.DigitalWriteCmdd(hw, 11, 1);
 
@@ -100,13 +100,13 @@ namespace UnitTestForArduino
 
 			Assert::AreEqual(analogSw3Write30.functionNr, 4);
 			Assert::AreEqual(analogSw3Write30.pinNumber, 3);
-			Assert::AreEqual(analogSw3Write30.functionResult, 30);
+			Assert::AreEqual(analogSw3Write30.functionResult, 37);
 
 			Result analogSw3Write40 = executerGener.AnalogWriteCmdd(sw, 3, 40);
 
 			Assert::AreEqual(analogSw3Write40.functionNr, 4);
 			Assert::AreEqual(analogSw3Write40.pinNumber, 3);
-			Assert::AreEqual(analogSw3Write40.functionResult, 40);
+			Assert::AreEqual(analogSw3Write40.functionResult, 47);
 
 			Result analogSw5Write150 = executerGener.AnalogWriteCmdd(hw, 5, 150);
 
