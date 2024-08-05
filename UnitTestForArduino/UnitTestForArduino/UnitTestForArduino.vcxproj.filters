@@ -24,9 +24,6 @@
     <ClCompile Include="Interfaceee.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ExecuteHw.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ExecuterGeneral.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -36,9 +33,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="IExecute.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ExecuteHw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Result.h">
