@@ -74,7 +74,7 @@ void loop()
 
   analogValA0 = analogRead(A0);
 
-  kuris = ledpagal.KuriPinaIjungti(analogValA0); 
+  kuris = ledpagal.KuriPinaIjungti(analogValA0);
 
   digitalWrite(kuris, HIGH);
 
