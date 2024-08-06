@@ -1,16 +1,16 @@
-#ifndef EXECUTE_SW_H
-#define EXECUTE_SW_h
+#ifndef EXECUTE_HW_H
+#define EXECUTE_HW_H
 #include "Result.h"
 #include "IExecute.h"
 
-class ExecuteSw : public IExecute
+class ExecuteHw : public IExecute
 {
 private:
     Result result;
 
 public:
 
-    ExecuteSw()
+    ExecuteHw()
     {
     }
 
@@ -24,5 +24,5 @@ public:
 };
 
 #endif
-// endif EXECUTE_SW
+// endif EXECUTE_HW
 

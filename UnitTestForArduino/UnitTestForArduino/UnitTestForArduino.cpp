@@ -1,10 +1,26 @@
 
 #include "CppUnitTest.h"
-#include "ExecuteSw.h"
+//#include "ExecuteSw.h"
 //#include "ExecuteHw.h"
-#include "ExecuterGeneral.h"
-#include "Result.h"
-#include "LedPagalLygi.h"
+//#include "ExecuterGeneral.h"
+//#include "Result.h"
+//#include "LedPagalLygi.h"
+
+
+#include "D:\pc_07_1tb_ssd\programming\c_cpp_csharp\vs2022projects\ArduinoTestuBandymas001\UnitestForArduino\lib\ExecuteSw.h"
+#include "D:\pc_07_1tb_ssd\programming\c_cpp_csharp\vs2022projects\ArduinoTestuBandymas001\UnitestForArduino\lib\ExecuterGeneral.h"
+#include "D:\pc_07_1tb_ssd\programming\c_cpp_csharp\vs2022projects\ArduinoTestuBandymas001\UnitestForArduino\lib\Result.h"
+#include "D:\pc_07_1tb_ssd\programming\c_cpp_csharp\vs2022projects\ArduinoTestuBandymas001\UnitestForArduino\lib\LedPagalLygi.h"
+
+#include "D:\pc_07_1tb_ssd\programming\c_cpp_csharp\vs2022projects\ArduinoTestuBandymas001\UnitestForArduino\lib\ExecuteSw.cpp"
+#include "D:\pc_07_1tb_ssd\programming\c_cpp_csharp\vs2022projects\ArduinoTestuBandymas001\UnitestForArduino\lib\ExecuterGeneral.cpp"
+#include "D:\pc_07_1tb_ssd\programming\c_cpp_csharp\vs2022projects\ArduinoTestuBandymas001\UnitestForArduino\lib\LedPagalLygi.cpp"
+
+
+
+
+
+
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -133,7 +149,7 @@ namespace UnitTestForArduino
 
 			LedPagalLygi ledIjungimasPagalLygi;
 
-			Result ress;
+			//Result ress;
 
 			int l010 = ledIjungimasPagalLygi.KuriPinaIjungti(30);
 
