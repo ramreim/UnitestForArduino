@@ -165,6 +165,9 @@
     <ClCompile Include="Interfaceee.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="LedPagalLygi.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="UnitTestForArduino.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -173,6 +176,7 @@
     <ClInclude Include="ExecuterGeneral.h" />
     <ClInclude Include="ExecuteSw.h" />
     <ClInclude Include="IExecute.h" />
+    <ClInclude Include="LedPagalLygi.h" />
     <ClInclude Include="Result.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

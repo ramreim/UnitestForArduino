@@ -4,6 +4,7 @@
 //#include "ExecuteHw.h"
 #include "ExecuterGeneral.h"
 #include "Result.h"
+#include "LedPagalLygi.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -120,5 +121,72 @@ namespace UnitTestForArduino
 			//Assert::AreEqual(analogSw5Write180.pinNumber, 5);
 			//Assert::AreEqual(analogSw5Write180.functionResult, 189);
 		}
+
+
+		TEST_METHOD(LedPagalLy00gi001)
+		{
+			ExecuteSw sw;
+
+			//ExecuteHw hw;
+
+			ExecuterGeneral executerGener;
+
+			LedPagalLygi ledIjungimasPagalLygi;
+
+			Result ress;
+
+			int l010 = ledIjungimasPagalLygi.KuriPinaIjungti(30);
+
+			int l030 = ledIjungimasPagalLygi.KuriPinaIjungti(30);
+
+			int l060 = ledIjungimasPagalLygi.KuriPinaIjungti(60);
+
+			int l120 = ledIjungimasPagalLygi.KuriPinaIjungti(120);
+
+			int l200 = ledIjungimasPagalLygi.KuriPinaIjungti(200);
+
+			int l220 = ledIjungimasPagalLygi.KuriPinaIjungti(220);
+
+			Assert::AreEqual(l010, 2);
+
+			Assert::AreEqual(l030, 2);
+
+			Assert::AreEqual(l060, 3);
+
+			Assert::AreEqual(l120, 4);
+
+			Assert::AreEqual(l200, 5);
+
+			Assert::AreEqual(l220, 5);
+
+
+
+			/*
+
+			int l = lygis.Palyginimas(10, 20);
+
+			if (l > 0)
+				ress = lygis.SiurblysOnOff(3, l);
+			else
+				ress = lygis.SiurblysOnOff(3, 0);
+
+			Assert::AreEqual(ress.functionNr, 2);
+			Assert::AreEqual(ress.pinNumber, 3);
+			Assert::AreEqual(ress.functionResult, 5);
+
+
+			l = lygis.Palyginimas(20, 10);
+
+			if (l > 0)
+				ress = lygis.SiurblysOnOff(3, l);
+			else
+				ress = lygis.SiurblysOnOff(3, 0);
+
+			Assert::AreEqual(ress.functionNr, 2);
+			Assert::AreEqual(ress.pinNumber, 3);
+			Assert::AreEqual(ress.functionResult, 15);
+
+			*/
+		};
 	};
 }
