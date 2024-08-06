@@ -1,12 +1,3 @@
-//#include "ExecuteSw.h"
-//#include "ExecuteHw.h"
-//#include "ExecuterGeneral.h"
-//#include "Result.h"
-//#include "LedPagalLygi.h"
-
-//#include "D:\pc_07_1tb_ssd\programming\c_cpp_csharp\vs2022projects\ArduinoTestuBandymas001\UnitestForArduino\UnitTestForArduino\UnitTestForArduino\ExecuteHw.h"
-//#include "D:\pc_07_1tb_ssd\programming\c_cpp_csharp\vs2022projects\ArduinoTestuBandymas001\UnitestForArduino\UnitTestForArduino\UnitTestForArduino\ExecuterGeneral.h"
-//#include "D:\pc_07_1tb_ssd\programming\c_cpp_csharp\vs2022projects\ArduinoTestuBandymas001\UnitestForArduino\UnitTestForArduino\UnitTestForArduino\Result.h"
 
 #include "D:\pc_07_1tb_ssd\programming\c_cpp_csharp\vs2022projects\ArduinoTestuBandymas001\UnitestForArduino\lib\ExecuteHw.h"
 #include "D:\pc_07_1tb_ssd\programming\c_cpp_csharp\vs2022projects\ArduinoTestuBandymas001\UnitestForArduino\lib\ExecuterGeneral.h"
@@ -16,7 +7,6 @@
 #include "D:\pc_07_1tb_ssd\programming\c_cpp_csharp\vs2022projects\ArduinoTestuBandymas001\UnitestForArduino\lib\ExecuteHw.cpp"
 #include "D:\pc_07_1tb_ssd\programming\c_cpp_csharp\vs2022projects\ArduinoTestuBandymas001\UnitestForArduino\lib\ExecuterGeneral.cpp"
 #include "D:\pc_07_1tb_ssd\programming\c_cpp_csharp\vs2022projects\ArduinoTestuBandymas001\UnitestForArduino\lib\LedPagalLygi.cpp"
-
 
 #include <Arduino.h>
 
@@ -34,7 +24,6 @@ int analogValA0 = 0;
 
 void setup()
 {
-
   //pinMode(2, INPUT_PULLUP);
   //pinMode(3, INPUT_PULLUP);
   //pinMode(4, INPUT_PULLUP);
@@ -64,9 +53,7 @@ void setup()
   digitalWrite(6, LOW);
   digitalWrite(7, LOW);
 
-
   Serial.begin(9600);
-
 }
 
 void loop()
@@ -98,10 +85,6 @@ void loop()
   Serial.print("\n");
 
   delay(200);
-
-
-
-
 
   //ExecuteSw sw;
 
