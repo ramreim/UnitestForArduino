@@ -2,6 +2,7 @@
 #include "ExecuteHw.h"
 #include "ExecuterGeneral.h"
 #include "Result.h"
+#include "LedPagalLygi.h"
 
 //#include "D:\pc_07_1tb_ssd\programming\c_cpp_csharp\vs2022projects\ArduinoTestuBandymas001\UnitestForArduino\UnitTestForArduino\UnitTestForArduino\ExecuteHw.h"
 //#include "D:\pc_07_1tb_ssd\programming\c_cpp_csharp\vs2022projects\ArduinoTestuBandymas001\UnitestForArduino\UnitTestForArduino\UnitTestForArduino\ExecuterGeneral.h"

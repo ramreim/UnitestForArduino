@@ -21,16 +21,3 @@ int LedPagalLygi::KuriPinaIjungti(int analogValue)
 	return sk;
 }
 
-
-//
-//Result LedPagalLygi::PinOnOff(int pin, int val)
-//{
-//	result.pinNumber = pin;
-//	result.functionNr = 2;
-//	result.functionResult = pin + result.functionNr + val;
-//	//digitalWrite(pin, val);
-//	//result.functionResult = val;
-//	return result;
-//}
-
-

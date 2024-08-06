@@ -158,35 +158,6 @@ namespace UnitTestForArduino
 			Assert::AreEqual(l200, 5);
 
 			Assert::AreEqual(l220, 5);
-
-
-
-			/*
-
-			int l = lygis.Palyginimas(10, 20);
-
-			if (l > 0)
-				ress = lygis.SiurblysOnOff(3, l);
-			else
-				ress = lygis.SiurblysOnOff(3, 0);
-
-			Assert::AreEqual(ress.functionNr, 2);
-			Assert::AreEqual(ress.pinNumber, 3);
-			Assert::AreEqual(ress.functionResult, 5);
-
-
-			l = lygis.Palyginimas(20, 10);
-
-			if (l > 0)
-				ress = lygis.SiurblysOnOff(3, l);
-			else
-				ress = lygis.SiurblysOnOff(3, 0);
-
-			Assert::AreEqual(ress.functionNr, 2);
-			Assert::AreEqual(ress.pinNumber, 3);
-			Assert::AreEqual(ress.functionResult, 15);
-
-			*/
 		};
 	};
 }

@@ -1,5 +1,5 @@
-#ifndef EXECUTE_HW_H
-#define EXECUTE_HW_H
+#ifndef LED_PAGAL_LYGI_H
+#define LED_PAGAL_LYGI_H
 #include "Result.h"
 
 class LedPagalLygi
@@ -15,7 +15,6 @@ public:
 
     int KuriPinaIjungti(int);
 
-    Result PinOnOff(int, int);
 };
 
 #endif
